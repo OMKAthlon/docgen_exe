@@ -23,6 +23,7 @@ public class InputParametersDataWin {
     private String userPassword;
     private String locationOutputLisFile;
     private String locationLogFile;
+    private String database;
     private ArrayList<String> parameterList;
     private boolean append;
     private boolean nolis;
@@ -33,6 +34,7 @@ public class InputParametersDataWin {
         this.userName = userName(args);
         this.userPassword = userPassword(args);
         this.locationOutputLisFile = locationOutputLisFile(args);
+        this.database = databaseName(args);
         this.parameterList = parameterList(args);
         this.append = appendNoappend(args);
         this.nolis = lisOrNolis(args);

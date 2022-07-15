@@ -22,6 +22,7 @@ public class InputParametersDataUnix {
     private String userPassword;
     private String locationOutputLisFile;
     private String locationLogFile;
+    private String database;
     private ArrayList<String> parameterList;
     private ArrayList<String> inputParameterList;
 
@@ -31,6 +32,7 @@ public class InputParametersDataUnix {
         this.userName = userName(args);
         this.userPassword = userPassword(args);
         this.locationOutputLisFile = locationOutputLisFile(args);
+        this.database = databaseName(args);
         this.parameterList = parameterList(args);
     }
 

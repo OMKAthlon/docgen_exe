@@ -32,6 +32,7 @@ public class InputParameters {
         this.userPassword = inputParametersDataWin.getUserPassword();
         this.locationOutputLisFile = inputParametersDataWin.getLocationOutputLisFile();
         this.locationLogFile = inputParametersDataWin.getLocationLogFile();
+        this.databaseName = inputParametersDataWin.getDatabase();
         this.parameterList = inputParametersDataWin.getParameterList();
     }
 
@@ -41,6 +42,7 @@ public class InputParameters {
         this.userPassword = inputParametersDataUnix.getUserPassword();
         this.locationOutputLisFile = inputParametersDataUnix.getLocationOutputLisFile();
         this.locationLogFile = inputParametersDataUnix.getLocationLogFile();
+        this.databaseName = inputParametersDataUnix.getDatabase();
         this.parameterList = inputParametersDataUnix.getParameterList();
     }
 
