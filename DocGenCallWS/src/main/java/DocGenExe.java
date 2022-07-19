@@ -13,12 +13,17 @@ public class DocGenExe {
     private static InputParameters inputParameters;
 
     public static void main(String[] args) {
+
+        long startTimeProcess = System.currentTimeMillis();
+
         LogController.setLogFile(args);
         InputParameters inputParameters = setInputParameters(args);
 
 
         HttpController.SendInputData(inputParameters);
 
+        long endTimeProcess = System.currentTimeMillis(); //Get the end Time
+        System.out.println("Duration total process: " + (endTimeProcess - startTimeProcess) + " ms");
 
     }
 
